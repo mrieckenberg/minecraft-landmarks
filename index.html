@@ -17,6 +17,11 @@
         padding: 5px 60px;
         }
 
+        .nav-item:hover{
+          background-color: #12AD6E;
+        }
+
+
 
         .main{
         text-align: center;
@@ -33,7 +38,7 @@
         padding: 25px 20px;
         }
 
-        #williamsburg{
+        #top{
         display: flex;
         justify-content: center;
         font-size: 50px;
@@ -64,19 +69,6 @@
         font-size: 30px;
         }
 
-<!--        description{-->
-<!--        text-align: left;-->
-<!--        display:block;-->
-<!--        margin: auto;-->
-<!--        position: relative;-->
-<!--        left: 50%;-->
-<!--        }-->
-
-<!--table, th, td {-->
-<!--text-align: center;-->
-<!--    margin: auto;-->
-<!--  border:1px solid black;-->
-<!--}-->
 
 table, th, td {
 text-align: center;
@@ -93,10 +85,16 @@ button{
 background-color: #AC75FA;
 }
 
+button:hover{
+    background-color: #5A1380;
+}
+
 
 
 
     </style>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -105,8 +103,9 @@ background-color: #AC75FA;
 <body>
 <div class="header-nav">
     <ul class="nav">
+        <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link active" href="/" style="color: #FFFFCC">Home
+            <a class="nav-link active" href="" style="color: #FFFFCC"><b>Home</b>
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                      class="bi bi-house-door" viewBox="0 0 16 16">
                     <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
@@ -114,30 +113,35 @@ background-color: #AC75FA;
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/about" style="color: #FFFFCC">About
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                     class="bi bi-info-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                </svg>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact" style="color: #FFFFCC">Contact
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                     class="bi bi-envelope-open" viewBox="0 0 16 16">
-                    <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z"/>
-                </svg>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/minecraft" style="color: #FFFFCC">Minecraft
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                     class="bi bi-globe-americas" viewBox="0 0 16 16">
+            <a class="nav-link" href="/minecraft" style="color: #FFFFCC"><b>Minecraft</b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
                 </svg>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/minecraft-landmarks" style="color: #FFFFCC"><b>Landmarks</b>
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+  <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+</svg>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/minecraft-transit" style="color: #FFFFCC"><b>Transit</b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
+                </svg>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/minecraft-info" style="color: #FFFFCC"><b>Information</b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                </svg>
+            </a>
+        </li>
+        
     </ul>
 </div>
 
@@ -152,7 +156,7 @@ background-color: #AC75FA;
 
 <div class="center">
     <br>
-    <h1 id="williamsburg">Landmarks</h1>
+    <h1 id="top">Landmarks</h1>
     <p>Click on the <span style="color:#AC75FA"><b><i>purple</i></b></span> buttons to copy the teleport commands to your clipboard</p>
     <br>
     <div id>
@@ -285,7 +289,7 @@ background-color: #AC75FA;
     <br>
     <br>
 
-    <h2>König Peter I Platz <a href="https://drive.google.com/drive/folders/1LkoL8sXe4nEZivCoEn7a20dbEE37ZNrZ?usp=share_link"
+    <h2>König Paul IV Platz <a href="https://drive.google.com/drive/folders/1LkoL8sXe4nEZivCoEn7a20dbEE37ZNrZ?usp=share_link"
                         target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
              class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
@@ -379,35 +383,7 @@ background-color: #AC75FA;
 
     <br>
     <br>
-    <h2>New Quahog <a href="https://drive.google.com/drive/folders/17DnGtj1XUYu0XIKQ9I2MjlaP1Jf0kSDW?usp=sharing"
-                        target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-             class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                  d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
-            <path fill-rule="evenodd"
-                  d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
-        </svg>
-    </a></h2>
-<iframe src="https://drive.google.com/file/d/1FRLAPHc9cfg6RqWeb65P2WwXTYfCXbaI/preview" width="640" height="480" allow="autoplay"></iframe>
-
-    <br>
-    <table style="width:40%">
-        <tr>
-            <td><b>Creator(s)</b></td>
-            <td><b>Coordinates (x,y,z)</b></td>
-            <td><b>Year Started</b></td>
-            <td><b>Status</b></td>
-        </tr>
-        <tr>
-            <td>Caleb Stanton and Matthew Rieckenberg</td>
-            <td><button onclick="copyText(-1285,65,2489)">(-1285, 65, 2489)</button></td>
-            <td>2022</td>
-            <td style="color:red">Under construction</td>
-        </tr>
-    </table>
-
-    <br><br>
+   
     <h2>Stanton Bibliothek <a href="https://drive.google.com/drive/folders/1psBN-ulzwgTvlcgcQKHqY5MUsgWQnBn6?usp=sharing"
                         target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -434,10 +410,42 @@ background-color: #AC75FA;
             <td style="color:green">Completed 2022</td>
         </tr>
     </table>
+    <br>
+    <br>
+
+     <h2>New Quahog <a href="https://drive.google.com/drive/folders/17DnGtj1XUYu0XIKQ9I2MjlaP1Jf0kSDW?usp=sharing"
+                        target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+             class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+            <path fill-rule="evenodd"
+                  d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+        </svg>
+    </a></h2>
+<iframe src="https://drive.google.com/file/d/1FRLAPHc9cfg6RqWeb65P2WwXTYfCXbaI/preview" width="640" height="480" allow="autoplay"></iframe>
+
+    <br>
+    <table style="width:40%">
+        <tr>
+            <td><b>Creator(s)</b></td>
+            <td><b>Coordinates (x,y,z)</b></td>
+            <td><b>Year Started</b></td>
+            <td><b>Status</b></td>
+        </tr>
+        <tr>
+            <td>Caleb Stanton and Matthew Rieckenberg<br></td>
+            <td><button onclick="copyText(-1285,65,2489)">(-1285, 65, 2489)</button></td>
+            <td>2022</td>
+            <td style="color:red">Under construction</td>
+        </tr>
+    </table>
+
+    <br><br>
 
     <div id="copyright">
 
-        <p><a href="https://github.com/18mpr1" target="_blank" rel="noopener noreferrer">Matthew Rieckenberg
+        <p><a href="https://github.com/mrieckenberg" target="_blank" rel="noopener noreferrer">Matthew Rieckenberg
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github"
                      viewBox="0 0 16 16">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
@@ -449,7 +457,7 @@ background-color: #AC75FA;
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
             </a>
-            <br>© 2023
+            <br>2023
         </p>
     </div>
 </div>
